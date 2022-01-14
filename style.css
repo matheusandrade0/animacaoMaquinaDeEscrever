@@ -1,0 +1,51 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: '1942 report', sans-serif;
+
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: rgba(25, 25, 25);
+    
+    /* adicionando imagem de fundo */
+    background: url('https://i.pinimg.com/736x/77/75/05/7775054a7b9f533c79c451de52f86b23.jpg');
+    background-size: cover;
+    
+}
+.texto1{
+    border-right: 2px solid black;
+    color: black;
+    font-size: 3em;
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+    
+}
+
+.typing-animation{
+    animation: blinkCursor 500ms infinite normal, typing 5s steps(40) 1s normal both;
+}
+@keyframes blinkCursor{
+    from{
+        border-right-color: black;
+    }
+    to{
+        border-right-color: transparent;
+    }
+}
+
+@keyframes typing{
+    from{
+        width: 0;
+    }
+    to{
+        width: 25em;
+    }
+}
